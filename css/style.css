@@ -1,3 +1,58 @@
-body {
-	background-color: red;
+body{
+  background: #c2c2d6;
+  background-size: 1500px;
+}
+#submit{
+  background: #d9ff66;
+  border-radius: 15px;
+  font-family: "Helvetica";
+}
+.form{
+  margin: 15px auto 20px;
+  text-align: center;
+}
+.letter{
+  background: #ffff4d;
+  border: solid #6b6b47;
+  margin-right: -7px;
+  border-radius: 20px;
+  display: inline-block;
+}
+.letters{
+  text-align: center;
+  margin-top: 5px;
+}
+@media screen and (min-width: 300px){
+  .letter{
+    width: 50px;
+    height: 50px;
+  }
+  #submit{
+  margin-top: 5px;
+  width: 80px;
+  height: 30px;
+  font-size: 17px;
+  }
+  h1{
+    font-size: 35px;
+    position: relative;
+    bottom: 14px;
+  }
+}
+@media screen and (min-width: 700px){
+  .letter{
+    width: 70px;
+    height: 70px;
+  }
+  #submit{
+  margin-top: auto;
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  }
+  h1{
+    font-size: 50px;
+    position: relative;
+    bottom: 12px;
+  }
 }

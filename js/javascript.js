@@ -29,6 +29,20 @@ function Game() {
 		randomWord = words[Math.floor(Math.random() * 479)];
 		console.log(randomWord);
 	}
+
+	this.check = function () {
+		if (document.getElementById("input").value.length != 5) {
+			alert("Het woord moet 5 letters bevatten")
+		}
+		if (document.getElementById("input").value == randomWord) {
+			alert("Goed gedaan!")
+		}
+	}
+	this.fillin = function () {
+		for (var i = 1; i <= 5; i++) {
+			document.getElementById("letter"+i).value = document.getElementById("input").value.charAt(i-1);
+		}
+	}
 }
 
 var game = new Game();
@@ -36,10 +50,3 @@ var game = new Game();
 (function() {
 	game.start();
 })()
-
-function Check() {
-	var userWord = getElementById("input").value;
-	if (userWord.length != 5) {
-		alert("Het woord moet uit 5 letters bestaan")
-	}
-}

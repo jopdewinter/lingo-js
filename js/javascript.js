@@ -11,8 +11,14 @@ function Game() {
 			var	varUWord = document.getElementById("input").value;
 			var derp = [];
 
+			if (document.getElementById("input").value.length != 5) {
+				alert("Het woord moet 5 letters bevatten!");
+			}
+
 		    if (varRWord == varUWord) {
       		console.log(11);
+      		alert("Goed gedaan!");
+      		document.getElementById("restart").style.display = "inherit";
     		} else {
       		for (var i = 0; i < varRWord.length; i++) {
         		if (varRWord.charAt(i) == varUWord.charAt(i)) {
@@ -31,6 +37,11 @@ function Game() {
     }
   }
 }
+
+function restart() {
+	location.reload();
+}
+
 var game = new Game();
 
 (function() {

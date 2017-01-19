@@ -22,6 +22,11 @@ body{
   text-align: center;
   margin-top: 5px;
 }
+
+#restart {
+  display: none;
+}
+
 @media screen and (min-width: 300px){
   .letter{
     width: 50px;
@@ -37,6 +42,9 @@ body{
     font-size: 35px;
     position: relative;
     bottom: 14px;
+  }
+  #restart {
+    display: none;
   }
 }
 @media screen and (min-width: 700px){
@@ -54,5 +62,8 @@ body{
     font-size: 50px;
     position: relative;
     bottom: 12px;
+  }
+  #restart {
+    display: none;
   }
 }

@@ -7,8 +7,8 @@ function Game() {
 	}
 
 	this.check = function () {
-			var varRWord = "appel";
-			var	varUWord = "aepes";
+			var varRWord = (randomWord);
+			var	varUWord = document.getElementById("input").value;
 			var derp = [];
 
 		    if (varRWord == varUWord) {

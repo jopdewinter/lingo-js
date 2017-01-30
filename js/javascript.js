@@ -15,10 +15,13 @@ function Game() {
 				alert("Het woord moet 5 letters bevatten!");
 			}
 
+			for (var i = 0; i < 5; i++) {
+				document.getElementById('letter'+i).innerHTML = varUWord.charAt(i);
+			}
+
 		    if (varRWord == varUWord) {
-      		console.log(11);
-      		alert("Goed gedaan!");
-      		document.getElementById("restart").style.display = "inherit";
+      			alert("Goed gedaan!");
+      			document.getElementsByClassName('letter').style.background = "#15ff00";
     		} else {
       		for (var i = 0; i < varRWord.length; i++) {
         		if (varRWord.charAt(i) == varUWord.charAt(i)) {

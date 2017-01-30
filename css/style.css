@@ -2,11 +2,6 @@ body{
   background: #c2c2d6;
   background-size: 1500px;
 }
-#submit{
-  background: #d9ff66;
-  border-radius: 15px;
-  font-family: "Helvetica";
-}
 .form{
   margin: 15px auto 20px;
   text-align: center;

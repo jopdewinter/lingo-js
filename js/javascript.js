@@ -20,8 +20,10 @@ function Game() {
 			}
 
 		    if (varRWord == varUWord) {
+      			for (var i = 0; i < 5; i++) {
+      				document.getElementsByClassName('letter')[i].style.background = "#15ff00";
+      			}
       			alert("Goed gedaan!");
-      			document.getElementsByClassName('letter').style.background = "#15ff00";
     		} else {
       		for (var i = 0; i < varRWord.length; i++) {
         		if (varRWord.charAt(i) == varUWord.charAt(i)) {

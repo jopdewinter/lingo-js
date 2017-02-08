@@ -11,15 +11,37 @@ body{
   border: solid #6b6b47;
   margin-right: -7px;
   border-radius: 20px;
-  display: inline-block;
+  display: inline-block;  
 }
 .letters{
   text-align: center;
-  margin-top: 5px;
+  margin-top: 9px;
 }
-
+#letter0{
+  font-family: Segoe UI light;
+  margin-top: 9px;
+}
+#letter1{
+  font-family: Segoe UI light;
+  margin-top: 9px;
+}
+#letter2{
+  font-family: Segoe UI light;
+  margin-top: 9px;
+}
+#letter3{
+  font-family: Segoe UI light;
+  margin-top: 9px;
+}
+#letter4{
+  font-family: Segoe UI light;
+  margin-top: 9px;
+}
 #restart {
   display: none;
+}
+#schema {
+  text-align: center;
 }
 
 @media screen and (min-width: 300px){

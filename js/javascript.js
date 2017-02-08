@@ -15,9 +15,10 @@ function Game() {
 				alert("Het woord moet 5 letters bevatten!");
 			}
 
-			for (var i = 0; i < 5; i++) {
-				document.getElementById('letter'+i).innerHTML = varUWord.charAt(i);
-			}
+      for (var i = 0; i < 5; i++) {
+        document.getElementById('letter'+i).innerHTML = varUWord.charAt(i);
+        
+      }
 
 		    if (varRWord == varUWord) {
       			for (var i = 0; i < 5; i++) {
@@ -36,9 +37,19 @@ function Game() {
             } else {
               derp.push(0);
             }
-   		}
+   		   }
+
+
       }
       console.log(derp);
+      for (var i = 0; i < 5; i++) {
+          if(derp[i] == 1) {
+            document.getElementsByClassName('letter')[i].style.background = "#15ff00";
+          }
+          if(derp[i] == 2) {
+            document.getElementsByClassName('letter')[i].style.background = "#eeff00";
+          }
+         }
     }
   }
 }

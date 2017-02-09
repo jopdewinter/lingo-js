@@ -48,6 +48,7 @@ function Game() {
           }
           if(derp[i] == 2) {
             document.getElementsByClassName('letter')[i].style.background = "#eeff00";
+            document.getElementsByClassName("letter")[i].style.borderRadius = "50px";
           }
          }
     }
